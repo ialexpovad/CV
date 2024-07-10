@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aliaksandr Povad | CV">
+    <title>ALIAKSANDR POVAD | CV</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+</head>
+<body>
+    <div id="content"></div>
+
+    <!-- Include markdown-it from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@13.0.1/dist/markdown-it.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.4/pako.min.js"></script>
+    <script>
+        // Function to get URL parameter
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        };
+
+        // Function to decode base64
+        function base64ToUint8Array(base64) {
+            var raw = window.atob(base64);
+            var rawLength = raw.length;
+            var array = new Uint8Array(new ArrayBuffer(rawLength));
+
+            for (var i = 0; i < rawLength; i++) {
+                array[i] = raw.charCodeAt(i);
+            }
+            return array;
+        }
+
+        // Get the 'md' parameter from the URL
+        (async function () {
+            var compressedMarkdownText = getUrlParameter('mdz');
+            var markdownText;
+            
+            if (compressedMarkdownText) {
+                // Decode the base64 string to a Uint8Array
+                var compressedMarkdownData = base64ToUint8Array(compressedMarkdownText);
+    
+                // Decompress the Uint8Array using pako
+                markdownText = pako.inflate(compressedMarkdownData, { to: 'string' });
+            }
+
+            if (!markdownText) {
+                markdownText = getUrlParameter('md');
+            }
+
+            if (!markdownText) {
+                markdownText = await (await fetch("README.md")).text();
+            }
+    
+            // Initialize markdown-it
+            var md = window.markdownit();
+
+            // Render the Markdown text
+            var result = md.render(markdownText);
+
+            // Insert the rendered HTML into the page
+            document.getElementById('content').innerHTML = result;
+        })();
+    </script>
+</body>
+</html>
