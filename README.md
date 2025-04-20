@@ -1,7 +1,4 @@
-# __ALIAKSANDR POVAD__
----
-
-As a passionate and self-driven **Software Engineer** with a foundation in **medical physics**, I specialize in crafting advanced solutions at the intersection of **radiation science** and **software engineering**. From developing **high-precision radiation detection systems** to building **scalable web applications**, I bring deep expertise in **radiation transport modeling**, **data analysis**, and **full-stack development**. With hands-on experience working with **production-scale datasets**, **high-performance computing**, and **cutting-edge technologies**, I thrive on solving complex challenges and delivering impactful, real-world results.
+As a passionate and self-driven **Software Developer** with a foundation in **medical physics**, I specialize in crafting advanced solutions at the intersection of **radiation science** and **software engineering**. From developing **high-precision radiation detection systems** to building **scalable web applications**, I bring deep expertise in **radiation transport modeling**, **data analysis**, and **full-stack development**. With hands-on experience working with **production-scale datasets**, **high-performance computing**, and **cutting-edge technologies**, I thrive on solving complex challenges and delivering impactful, real-world results.
 
 Career Summary
 
@@ -9,7 +6,7 @@ Career Summary
 - Proficient in **C/C++**, **C# (.NET MVC/Web API)**, **Python**, **JavaScript (ES6+, TypeScript)**, and **SQL**, with a focus on creating scalable, maintainable, and high-performance applications.  
 - Architected and implemented a full-scale **Radiation Sources Management System**, integrating **Entity Framework Core**, **ASP.NET MVC**, **RESTful APIs**, **Windows Services**, and **SignalR** for real-time updates.  
 - Developed a cloud-ready **Online Examination Platform** supporting role-based access, result analytics, and certification workflows using **ASP.NET Core**, **React**, and **MS SQL Server**.  
-- Experienced in **radiation transport modeling** using **GEANT4**, [**GATE**](http://www.opengatecollaboration.org/), and Monte Carlo techniques for simulating detection efficiency and shielding design.  
+- Experienced in **radiation transport modeling** using **GEANT4**, **GATE**, and Monte Carlo techniques for simulating detection efficiency and shielding design.  
 - Builds intelligent data processing pipelines with **NumPy**, **Pandas**, **scikit-learn**, and **TensorFlow**, applying **machine learning** to enhance detection accuracy and automate signal classification.  
 - Skilled in **Git**, **CI/CD pipelines (GitLab CI, GitHub Actions)**, **Docker**, and infrastructure scripting for seamless deployment and testing.  
 - Strong understanding of **software architecture**, **SOLID principles**, **design patterns**, and **secure coding** practices in regulated environments.
@@ -84,10 +81,10 @@ Led the **design and integration** of cutting-edge **machine learning algorithms
 
 Developed advanced simulation tools for **Monte Carlo-based radiation modeling** using **GEANT4**, enhancing the design and optimization of radiation detectors. This powerful tool simulates the behavior of **alpha**, **beta**, and **gamma** particles within detectors and shielding materials, providing valuable insights for **performance optimization**. Through this project, I delivered critical **simulation models** that helped fine-tune **detector sensitivity** and **shielding effectiveness**, ensuring the highest quality and precision in radiation measurement systems used for both **medical** and **industrial applications**.
 
-### **Web Applications for ATOMTEX Devices via Bluetooth (BLE)**
+### **Web Applications for ATOMTEX Devices via Bluetooth (BLE) and Serial**
 *December 2024 – February 2025*
 
-Designed and implemented **web-based applications** to enable seamless communication between **ATOMTEX radiation devices** and remote users via **Bluetooth (BLE)**. Using modern **JavaScript**, **HTML5**, and the **Web Bluetooth API**, I created intuitive interfaces that allow users to monitor and control radiation detectors from any location. These applications enhance flexibility and **user experience**, empowering operators to retrieve and analyze radiation data remotely, facilitating more efficient monitoring in dynamic and dispersed environments.
+Designed and implemented **web-based applications** to enable seamless communication between **ATOMTEX radiation devices** and remote users via **Bluetooth (BLE)** and **Serial**. Using modern **JavaScript**, **HTML5**, and the **Web Bluetooth/Serial API**, I created intuitive interfaces that allow users to monitor and control radiation detectors from any location. These applications enhance flexibility and **user experience**, empowering operators to retrieve and analyze radiation data remotely, facilitating more efficient monitoring in dynamic and dispersed environments.
 
 ### **Radiation Source Management System (RSMS)**
 *February 2024 – February 2025*
@@ -106,13 +103,22 @@ Developed **GRADES**, a sophisticated **gamma radiation activity detection evalu
 
 ## Projects
 
-### **[maggie-lang.com](https://maggie-lang.com) – English Tutor Website**  
+### **Fuzzy Interface System**  
+*GitHub Repository: [Fuzzy Interface System](https://github.com/ialexpovad/fis)*  
+
+A **Fuzzy Interface System** utilizing **fuzzy logic** to interpret and respond to user inputs in **linguistic terms**, enabling more natural and adaptive human-machine interactions. This system allows users to provide vague commands (e.g., "warm" for temperature), which are then converted into precise actions. It's ideal for applications like **intelligent control systems**, **expert systems**, and **human-machine interfaces**.
+
+### **Acari – Clustering Algorithms for Radionuclide Identification**  
+*GitHub Repository: [Acari](https://github.com/ialexpovad/acari)*  
+
+A Python-based project using the **Subtractive Clustering Method (SCM)** to classify **gamma spectra** via **Mountain Clustering**. It identifies cluster centers in spectral data by estimating spatial density across a discretized grid. Focused on **data science**, **signal processing**, and **pattern recognition** for **radiation detection systems** in medical and industrial applications.
+
+### **English Tutor Website**  
+*Website: [maggie-lang.com](https://maggie-lang.com)*  
+
 A **personal portfolio website** developed for **self-employed English tutors**, showcasing a professional resume, work experience, and teaching opportunities. Built using **Vite**, **React**, and **JavaScript**, the site serves as an interactive, visually appealing resume that highlights teaching skills, qualifications, and the range of services offered. Designed with a focus on **user experience** and **professional branding**, this platform provides prospective clients with easy access to relevant information about the tutor’s expertise and services, alongside seamless navigation and fast load times due to **Vite**’s optimized development setup.
 
 ### **Online Examination System**
-*December 2024 – May 2025*
-Developed a **fully automated online examination system**, streamlining the process of creating, delivering, and grading assessments. Utilizing **ASP.NET Core**, **JavaScript**, and **SQL Server**, I designed a secure, **scalable platform** capable of handling large volumes of users. The system supports various **question types**, **real-time result analysis**. 
+*December 2024 – May 2025* 
 
-### **Fuzzy Interface System**  
-*GitHub Repository: [Fuzzy Interface System](https://github.com/ialexpovad/fis)*  
-A **Fuzzy Interface System** utilizing **fuzzy logic** to interpret and respond to user inputs in **linguistic terms**, enabling more natural and adaptive human-machine interactions. This system allows users to provide vague commands (e.g., "warm" for temperature), which are then converted into precise actions. It's ideal for applications like **intelligent control systems**, **expert systems**, and **human-machine interfaces**.
+Developed a **fully automated online examination system**, streamlining the process of creating, delivering, and grading assessments. Utilizing **ASP.NET Core**, **JavaScript**, and **SQL Server**, I designed a secure, **scalable platform** capable of handling large volumes of users. The system supports various **question types**, **real-time result analysis**. 
