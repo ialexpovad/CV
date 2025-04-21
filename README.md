@@ -4,9 +4,8 @@ Career Summary
 
 - **Software Engineer** at [**ATOMTEX**](https://atomtex.com), with a strong foundation in **radiation physics** and hands-on experience in building complex software systems for scientific and industrial applications.  
 - Proficient in **C/C++**, **C# (.NET MVC/Web API)**, **Python**, **JavaScript (ES6+, TypeScript)**, and **SQL**, with a focus on creating scalable, maintainable, and high-performance applications.  
-- Architected and implemented a full-scale **Radiation Sources Management System**, integrating **Entity Framework Core**, **ASP.NET MVC**, **RESTful APIs**, **Windows Services**, and **SignalR** for real-time updates.  
-- Developed a cloud-ready **Online Examination Platform** supporting role-based access, result analytics, and certification workflows using **ASP.NET Core**, **React**, and **MS SQL Server**.  
 - Experienced in **radiation transport modeling** using **GEANT4**, **GATE**, and Monte Carlo techniques for simulating detection efficiency and shielding design.  
+- Architected and implemented a full-scale a cloud-ready **Radiation Sources Management System** and **Online Examination Platform**, integrating **Entity Framework Core**, **ASP.NET MVC**, **React**, **MS SQL Server**, **LDAP** and **SignalR** for real-time updates.  
 - Builds intelligent data processing pipelines with **NumPy**, **Pandas**, **scikit-learn**, and **TensorFlow**, applying **machine learning** to enhance detection accuracy and automate signal classification.  
 - Skilled in **Git**, **CI/CD pipelines (GitLab CI, GitHub Actions)**, **Docker**, and infrastructure scripting for seamless deployment and testing.  
 - Strong understanding of **software architecture**, **SOLID principles**, **design patterns**, and **secure coding** practices in regulated environments.

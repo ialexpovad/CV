@@ -4,7 +4,6 @@ html {
     -ms-text-size-adjust: 100% !important;
     -webkit-text-size-adjust: 100%
 }
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -15,6 +14,8 @@ html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
     border-radius: 12px;
     margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   
   .name h1 {
@@ -42,8 +43,8 @@ html {
     margin-bottom: 0.6rem;
     font-style: italic;
     letter-spacing: 0.4px;
-}
-
+  }
+  
   .subtitle br {
     margin-bottom: 0.2em;
   }
@@ -51,6 +52,7 @@ html {
   .photo img {
     width: 150px;
     height: 150px;
+    aspect-ratio: 1 / 1; /* Ensures square shape */
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #e0e0e0;
@@ -62,6 +64,30 @@ html {
     transform: scale(1.05);
     border-color: #b0b0b0;
   }
+  
+  /* Responsive behavior for phones */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .photo img {
+      width: 140px;
+      height: 140px;
+    }
+  
+    .name h1 {
+      font-size: 22px;
+    }
+  
+    .subtitle {
+      font-size: 11px;
+    }
+  }
+  
+
   .footer {
     display: flex;
     justify-content: center;
